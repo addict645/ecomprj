@@ -1,0 +1,55 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+
+
+﻿
+    <main class="main page-404">
+        <div class="page-content pt-150 pb-150">
+            <div class="payment-failed-container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-10 col-md-12 m-auto text-center">
+                        <p class="mb-20"><img src="assets/imgs/page/page-404.png" alt="" class="hover-up" /></p>
+                        <div class="error-icon">✖</div>
+                        <h1>Payment Unsuccessful</h1>
+                        <p>We're sorry, but your payment could not be processed. Please verify your payment details and try again.</p>
+                        <a href="{% url 'core:checkout' %}" class="retry-btn">Retry Payment</a>
+                        </p>
+                       
+                        <a class="btn btn-default submit-auto-width font-xs hover-up mt-30" href="{% url 'core:index' %}"><i class="fi-rs-home mr-5"></i> Back To Home Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .error-icon {
+                font-size: 50px; /* Size of the X symbol */
+                color: #dc3545; /* Color matching the danger theme */
+                margin-bottom: 15px; /* Spacing below the icon */
+        }
+        </style>
+
+        
+
+
+
+    </main>
+    
+<body>
+    <div class="invoice invoice-content invoice-6">
+        <main class="main">
+            <div class="payment-failed-container">
+                
+            </div>
+          
+            
+    
+        
+        </main>
+        
+        
+       
+    </div>
+   
+    {% endblock content %} 
+
